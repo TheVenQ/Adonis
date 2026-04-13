@@ -116,13 +116,13 @@ else
 
 		--// Note: The nightly module is updated frequently with every commit merged to the master branch on the Adonis repo.
 		--// It is prone to breaking, unstable, untested, and should not be used for anything other than testing/feature preview.
-		NightlyMode = true;			--// If true, uses the nightly module instead of the current release module.
+		NightlyMode = false;		--// If true, uses the nightly module instead of the current release module.
 		NightlyModuleID = 8612978896; 	--// https://www.roblox.com/library/8612978896/Nightlies-Adonis-MainModule
 
 		--// Module used in case MainModule is unavailable, containing only essential commands
 		Backup = 17438792001; 	--// https://create.roblox.com/store/asset/17438792001/
 
-		DebugMode = true;
+		DebugMode = false;
 		SilentStartup = false;
 	}
 

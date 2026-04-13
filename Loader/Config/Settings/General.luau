@@ -8,14 +8,14 @@ return {
 	SpecialPrefix = "";			-- Used for things like "all", "me" and "others" (If changed to ! you would do :kill !me)
 	SplitKey = " ";				-- The space in :kill me (eg if you change it to / :kill me would be :kill/me)
 	BatchKey = "|";				-- :kill me | :ff bob | :explode scel
-	ConsoleKeyCode = "Quote";	-- Keybind to open the console; Rebindable per player in userpanel; KeyCodes: https://developer.roblox.com/en-us/api-reference/enum/KeyCode
+	ConsoleKeyCode = "Insert";	-- Keybind to open the console; Rebindable per player in userpanel; KeyCodes: https://developer.roblox.com/en-us/api-reference/enum/KeyCode
 
 	HideScript = true;	-- When the game starts the Adonis_Loader model will be hidden so other scripts cannot access the settings module; Disable if your game uses AssetService:SavePlaceAsync()
 
 	DataStoreEnabled = true;		-- Disable if you don't want to load settings and admins from the datastore; PlayerData will still save
 	LocalDatastore = false;			-- If this is turned on, a mock DataStore will forcibly be used instead and shall never save across servers
 	DataStore = "Adonis_1";			-- DataStore the script will use for saving data; Changing this will lose any saved data
-	DataStoreKey = "CHANGE_THIS";	-- CHANGE THIS TO ANYTHING RANDOM! Key used to encrypt all datastore entries; Changing this will lose any saved data
+	DataStoreKey = "cG9xK8mW4vR7nJ2b";	-- CHANGE THIS TO ANYTHING RANDOM! Key used to encrypt all datastore entries; Changing this will lose any saved data
 
 	SaveAdmins = true;			-- If true anyone you :admin or :headadmin in-game will save
 	LoadAdminsFromDS = true;	-- If false, any admins saved in your DataStores will not load
@@ -78,7 +78,7 @@ return {
 
 	CodeExecution = false;	-- Enables the use of code execution in Adonis. Scripting related (such as :s) and a few other commands require this
 
-	Notification = true;	-- Whether or not to show the "You're an admin" and "Updated" notifications
+	Notification = false;	-- Whether or not to show the "You're an admin" and "Updated" notifications
 	SongHint = true;		-- Display a hint with the current song name and ID when a song is played via :music
 	TopBarShift = false;	-- By default hints and notifications will appear from the top edge of the window. Set this to true if you don't want hints/notifications to appear in that region.
 
